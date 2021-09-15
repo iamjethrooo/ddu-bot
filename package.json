@@ -1,7 +1,7 @@
 {
-  "name": "bbc-bot",
+  "name": "ddu-bot",
   "version": "1.0.0",
-  "description": "BBC Discord Bot",
+  "description": "Ddu Discord Bot",
   "main": "index.js",
   "keywords": [],
   "scripts": {
@@ -43,8 +43,8 @@
     "eslint": "^7.32.0"
   },
   "engines": {
-    "node": "12.16.3",
-    "npm": "6.14.4"
+    "node": "16.9.1",
+    "npm": "7.21.1"
   },
   "repository": {
     "type": "git",
