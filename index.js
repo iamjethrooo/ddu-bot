@@ -2,10 +2,37 @@ const { CommandoClient } = require('discord.js-commando');
 const { Structures } = require('discord.js');
 const path = require('path');
 const fs = require('fs');
-const mongoose = require('mongoose');
 
 require('dotenv').config();
 
+Structures.extend('Guild', function(Guild) {
+  class GuildData extends Guild {
+    constructor(client, data) {
+      super(client, data);
+      this.musicData = {
+        queue: [],
+        queueHistory: [],
+        isPlaying: false,
+        isPreviousTrack: false,
+        nowPlaying: null,
+        songDispatcher: null,
+        skipTimer: false, // only skip if user used leave command
+        loopSong: false,
+        loopQueue: false,
+        volume: 1
+      };
+    }
+    resetMusicDataOnError() {
+      this.musicData.queue.length = 0;
+      this.musicData.isPlaying = false;
+      this.musicData.nowPlaying = null;
+      this.musicData.loopSong = false;
+      this.musicData.loopQueue = false;
+      this.musicData.songDispatcher = null;
+    }
+  }
+  return GuildData;
+});
 
 const client = new CommandoClient ({
 	commandPrefix: process.env.PREFIX,

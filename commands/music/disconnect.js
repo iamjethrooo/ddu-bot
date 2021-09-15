@@ -12,7 +12,6 @@ module.exports = class DisconnectCommand extends Command {
 	}
 
 	run(message) {
-		console.log(message);
 		message.member.voice.channel.leave();
 	}
 }

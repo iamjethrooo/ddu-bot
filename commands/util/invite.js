@@ -20,7 +20,7 @@ module.exports = class InviteCommand extends Command {
 		const embed = new MessageEmbed()
 			.setColor('#0099ff')
 			.setTitle('Invite me to your server!')
-			.setURL('https://discord.com/api/oauth2/authorize?client_id=730410703378448394&permissions=0&scope=bot');
+			.setURL('https://discord.com/api/oauth2/authorize?client_id=886849026882949151&permissions=8&scope=bot');
 		// .setAuthor(message.author.username, message.author.displayAvatarURL({ dynamic: true }))
 		// .setDescription('Some description here')
 		// .setThumbnail('https://cdn.discordapp.com/app-icons/730410703378448394/77053223318bfd3fd52b15f94ffb97d5.png?size=256')
