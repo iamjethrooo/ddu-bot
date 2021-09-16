@@ -16,8 +16,7 @@ module.exports = class NowPlayingCommand extends Command {
   run(message) {
     if (
       (!message.guild.musicData.isPlaying &&
-        !message.guild.musicData.nowPlaying) ||
-      message.guild.triviaData.isTriviaRunning
+        !message.guild.musicData.nowPlaying)
     ) {
       message.reply(':no_entry: Please join a voice channel and try again!');
       return;
