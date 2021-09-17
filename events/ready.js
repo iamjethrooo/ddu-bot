@@ -30,5 +30,6 @@ module.exports = {
 			.catch(error => console.log(error));
 		}
 		console.log(`Logged in as ${client.user.tag}! (${client.user.id})`);
+		console.log(`Serving ${client.guilds.cache.size} servers.`);
 	}
 }
