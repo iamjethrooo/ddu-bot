@@ -24,7 +24,7 @@
     "ffmpeg-static": "^4.4.0",
     "is-promise": "^4.0.0",
     "libsodium-wrappers": "^0.7.9",
-    "moment": "^2.29.1",
+    "moment": "^2.29.2",
     "mongodb": "^4.1.1",
     "node-opus": "^0.3.3",
     "node-pre-gyp": "^0.15.0",
